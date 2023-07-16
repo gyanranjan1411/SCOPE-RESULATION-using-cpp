@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+	public:
+	string name;
+	int salary;
+	int age;
+	void readdetails()
+	{
+		cout<<"enter your name="<<endl;
+		cin>>name;
+		cout<<"enter your salary="<<endl;
+		cin>>salary;
+		cout<<"enter your age="<<endl;
+		cin>>age;
+	}
+	   void printdetails();
+};
+    void Employee::printdetails()
+    {
+    	cout<<"name is  "<<name<<endl;
+    	cout<<"salary is"<<salary<<endl;
+    	cout<<"age is"<<age<<endl;
+}
+    		int main()
+	{
+		Employee G;
+		G.readdetails();
+		G.printdetails();
+		return 0;
+	}
+    	
+	
